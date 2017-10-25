@@ -6,7 +6,7 @@ class System {
     /**
      * @param   Star[] $stars
      */
-    public function __construct(array $stars) {
+    public function __construct(array $stars, $user_pos) {
         $this->stars = $stars;
     }
 

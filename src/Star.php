@@ -17,6 +17,9 @@ class Star {
     }
 
     public function printOn(Screen $screen) {
-        $screen->star($this->x,$this->y, $this->name);
+        $symbols = [".","o","O", "*"];
+        $symbol = $symbols[random_int(0,3)];
+        $screen->set($this->x,$this->y,$symbol);
+        $screen->print($this->x+1,$this->y," ".$this->name." (".$this->x.",".$this->y.")");
     }
 }

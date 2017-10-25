@@ -38,9 +38,4 @@ class Screen {
             $i++;
         }
     }
-
-    public function star($x,$y,$name) {
-        $this->set($x,$y,"X");
-        $this->print($x+1,$y," $name ($x,$y)");
-    }
 }
