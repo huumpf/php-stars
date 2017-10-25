@@ -18,7 +18,7 @@ for($i=0;$i<$amount_of_stars;$i++) {
     $names->next();
 }
 
-$system = new System($stars);
+$system = new System($stars, 2);
 
 $system->printOn($screen);
 $screen->printMe();

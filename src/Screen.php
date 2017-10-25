@@ -38,4 +38,21 @@ class Screen {
             $i++;
         }
     }
+
+    public function marker1($x,$y) {
+        $this->print($x-2,$y-2,"\\   /");
+        $this->print($x-1,$y-1,".-.");
+        $this->set($x-2,$y,"(");
+        $this->set($x+2,$y,")");
+        $this->print($x-1,$y+1,"'-'");
+        $this->print($x-2,$y+2,"/   \\");
+    }
+
+    public function marker2($x,$y) {
+        $this->print($x,$y-2,"|");
+        $this->print($x-1,$y-1,".-.");
+        $this->print($x-4,$y,"--(");
+        $this->print($x-1,$y+1,"'-'");
+        $this->print($x,$y+2,"|");
+    }
 }

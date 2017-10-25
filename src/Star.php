@@ -22,4 +22,12 @@ class Star {
         $screen->set($this->x,$this->y,$symbol);
         $screen->print($this->x+1,$this->y," ".$this->name." (".$this->x.",".$this->y.")");
     }
+
+    public function x() {
+        return $this->x;
+    }
+
+    public function y() {
+        return $this->y;
+    }
 }
